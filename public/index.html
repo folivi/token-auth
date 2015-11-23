@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TokenApp</title>
+    <script src="front/bower_components/angular/angular.min.js"></script>
+    <script src="front/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="front/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="front/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/custom-bootstrap.css" type="text/css">
+    <script src="front/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="front/ng-app.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+    <script src="front/controllers/home_controller.js"></script>
+    <script src="front/controllers/login_controller.js"></script>
+</head>
+
+<body ng-app="tokenAuth">
+<header ng-include="'front/views/navbar.html'"></header>
+
+<div ui-view></div>
+</body>
+
+</html>
